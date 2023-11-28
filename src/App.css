@@ -1,0 +1,41 @@
+body {
+  background-color: #242424;
+  color: #fff;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.tabs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0.5;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.job-lists {
+  flex: 3;
+}
+
+svg {
+  width: 50px;
+}
+
+button {
+  height: 40px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 0;
+}
