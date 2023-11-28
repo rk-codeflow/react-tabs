@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FiChevronsRight } from "react-icons/fi";
 
+const url = "https://course-api.com/react-tabs-project";
+
 export const Job = () => {
+  const [loading, setLoading] = useState(true);
+  const [jobList, setJobList] = useState([]);
+
+  const fetchJobs = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+  };
+
+  useEffect(() => {
+    fetchJobs();
+  }, []);
+
   return (
     <div className="job-lists">
       <h2>FullStack Web Dev</h2>
